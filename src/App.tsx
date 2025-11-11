@@ -1,10 +1,12 @@
 import { Routes, Route } from "react-router"
-import { Home } from "./components/Home"
+import { Home } from "./pages/Home"
+import { Navbar } from "./components/Navbar"
 
 function App() {
   return (
-  <div>
-    <div>
+  <div className="bg-black min-h-screen text-gray-100 transition-opacity duration-700 pt-20">
+    <Navbar />
+    <div className="px-4 py-6 container mx-auto">
       <Routes>
         <Route path="/" element={<Home />}/>
       </Routes>
